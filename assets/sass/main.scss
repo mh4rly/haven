@@ -155,6 +155,7 @@ header {
       font-size: 40px;
       margin-top: 20px;
       min-height: 300px;
+      text-shadow: 1px 1px #fff;
       @media (max-width: 1200px) {
         min-height: auto;
       }
@@ -172,17 +173,23 @@ header {
             content: '';
             position: absolute;
             left: 0px;
-            top: -18px;
+            top: -4px;
             display: block;
             width: 50px;
-            height: 50px;
-            &.ticket {
+            height: 39px;
+          }
+          &.ticket {
+            &:before {
               background-position: 0 -13px;
             }
-            &.plane {
+          }
+          &.plane {
+            &:before {
               background-position: 0 -57px;
             }
-            &.money {
+          }
+          &.money {
+            &:before {
               background-position: 0 -104px;
             }
           }
